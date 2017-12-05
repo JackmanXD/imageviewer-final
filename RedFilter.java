@@ -32,9 +32,9 @@ public class RedFilter extends Filter
         for(int y = 0; y < height; y++) {
             for(int x = 0; x < width; x++) {
                 Color pix = image.getPixel(x, y);
-                image.setPixel(x, y, new Color(150 + pix.getRed(),
-                                               0 + pix.getGreen(),
-                                               0 + pix.getBlue()));
+                image.setPixel(x, y, new Color(0 + pix.getRed(),
+                                               0,
+                                               0));
             }
         }
     }
