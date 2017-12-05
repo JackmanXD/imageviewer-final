@@ -7,7 +7,7 @@ import java.awt.Color;
  * @version 1.0
  * 
  * @author Jack Henry Protopapa
- * @version 1.1
+ * @version 1.2
  */
 public class RedFilter extends Filter
 {
@@ -32,9 +32,9 @@ public class RedFilter extends Filter
         for(int y = 0; y < height; y++) {
             for(int x = 0; x < width; x++) {
                 Color pix = image.getPixel(x, y);
-                image.setPixel(x, y, new Color(255 - pix.getRed(),
-                                               0 - pix.getGreen(),
-                                               0 - pix.getBlue()));
+                image.setPixel(x, y, new Color(150 + pix.getRed(),
+                                               0 + pix.getGreen(),
+                                               0 + pix.getBlue()));
             }
         }
     }
